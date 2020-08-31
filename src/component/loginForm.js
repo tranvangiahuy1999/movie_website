@@ -15,14 +15,12 @@ export default class LoginForm extends React.Component {
                     <form onSubmit={this.props.onsubmit}>
                     <label>
                         <div className='input-box'>
-                            <div>
-                                {this.props.username}
-                            </div>
+                            {this.props.username}
                             {this.props.userwarn}
                         </div>
                         <div className='input-box'>
-                        {this.props.password}
-                        {this.props.passwarn}
+                            {this.props.password}
+                            {this.props.passwarn}
                         </div>
                     </label>
                     <div className='button-wrapper'>
