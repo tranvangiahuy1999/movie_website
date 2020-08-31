@@ -5,51 +5,24 @@ import HiddenPassword from './hiddenpassword';
 export default class LoginForm extends React.Component {
     constructor(props){
         super(props);
-        this.state={
-            username:'',
-            password:'',
-            userwarn:'',
-            passwarn:'',
-        }
-        this.handleSubmit=this.handleSubmit.bind(this);
-        this.setInput=this.setInput.bind(this);
     }
-
-    handleSubmit(e){
-        e.preventDefault();
-        if(this.state.username === ''){
-            this.setState({userwarn:'Please enter a valid email or phone number.'})
-        } else if(this.state.password === ''){
-            this.setState({passwarn:'Your password must contain between 4 and 60 characters.'})
-        } else {
-            //Do something in here
-            
-        }
-    }
-
-    setInput(text) {
-        this.setState({
-          password: text,
-          passwarn:''
-        });
-      }
 
     render(){
         return(
             <div className='login-form'>
                 <div className='form-content'>
                     <div className='title'>Sign In</div>
-                    <form onSubmit={this.handleSubmit}>
+                    <form onSubmit={this.props.onsubmit}>
                     <label>
                         <div className='input-box'>
                             <div>
-                                <input className='input-filter' type="text" onChange={(e)=>this.setState({username:e.target.value, userwarn:''})} placeholder='Email or phone number'/>
+                                {this.props.username}
                             </div>
-                            <text className='warn-text'>{this.state.userwarn}</text>
+                            {this.props.userwarn}
                         </div>
                         <div className='input-box'>
-                        <HiddenPassword password={(e) => this.setInput(e.target.value)}></HiddenPassword>
-                        <text className='warn-text'>{this.state.passwarn}</text>
+                        {this.props.password}
+                        {this.props.passwarn}
                         </div>
                     </label>
                     <div className='button-wrapper'>

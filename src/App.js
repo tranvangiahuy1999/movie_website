@@ -1,11 +1,10 @@
 import React from 'react';
 import './App.css';
-import LoginScreen from './component/login';
-import HomeScreen from './component/home'
+import Parent from './component/parent';
 
 function App() {
   return (
-      <HomeScreen></HomeScreen>
+      <Parent></Parent>
   );
 }
 
