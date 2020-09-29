@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import Parent from './component/parent';
+import './style/default.css';
+import Parent from './component/page/parent';
 
 function App() {
   return (

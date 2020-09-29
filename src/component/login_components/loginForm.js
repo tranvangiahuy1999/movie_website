@@ -1,6 +1,4 @@
 import React from 'react';
-import '../style/login.css';
-import HiddenPassword from './hiddenpassword';
 
 export default class LoginForm extends React.Component {
     constructor(props){
@@ -27,10 +25,10 @@ export default class LoginForm extends React.Component {
                         <button className='btn signin-button' type="submit">Sign In</button>
                     </div>
                     <div className='area'>
-                        <input type='checkbox'></input><text className='text' id='remember-text'>Remember me</text>
+                        <input type='checkbox'></input><text className='text'>Remember me</text>
                     </div>
                     <div className='area'>
-                        <text className='big-text'>New to Netflix? </text><a href='https://reactjs.org/docs/forms.html' className='big-text' id='link'>Sign up now.</a>
+                        <text className='large-text'>New to Netflix? </text><a href='https://reactjs.org/docs/forms.html' className='link-text'>Sign up now.</a>
                     </div>
                     <div className='area'>
                         <text className='text'>This page is protected by Google reCAPTCHA to ensure you're not a bot.</text>

@@ -11,7 +11,7 @@ export default class HiddenPassword extends React.Component {
     render(){
         return(
             <div style={{display:'flex', flexDirection:'row'}}>
-                <input className='input-filter' type={(this.state.hidden)?"password":"text"} onChange={this.props.password} placeholder='Password'/>        
+                <input className={this.props.className} type={(this.state.hidden)?"password":"text"} onChange={this.props.password} placeholder='Password'/>       
             </div>
         )
     }

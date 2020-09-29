@@ -7,7 +7,7 @@ export default class UsernameFilter extends React.Component {
 
     render(){
         return(
-            <input className='input-filter' type="text" onChange={this.props.username} placeholder='Email or phone number'/>
+            <input className={this.props.className} type="text" onChange={this.props.username} placeholder='Email or phone number'/>
         )
     }
 }
