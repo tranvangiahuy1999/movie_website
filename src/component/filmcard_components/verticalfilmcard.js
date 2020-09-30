@@ -13,7 +13,7 @@ export default class VerFilmCard extends React.Component {
                     <img className='vertical-movie-image' src={this.props.movieimageurl}></img>
                 </div>
                 <div className='card-bottom'>
-                    <div className='movie-name'>{this.props.moviename}</div>
+                    <h4 className='movie-name'>{this.props.moviename}</h4>
                     <div className='movie-info'>
                         <FaStar color='yellow' size={13}></FaStar>
                         <div className='movie-text-info'>

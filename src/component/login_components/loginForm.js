@@ -9,7 +9,7 @@ export default class LoginForm extends React.Component {
         return(
             <div className='login-form'>
                 <div className='form-content'>
-                    <div className='title'>Sign In</div>
+                    <h1 className='title'>Sign In</h1>
                     <form onSubmit={this.props.onsubmit}>
                     <label>
                         <div className='input-box'>

@@ -9,6 +9,7 @@ export default class HomeScreen extends React.Component {
     constructor(props){
         super(props);
     }
+
     render(){
         return(
             <div className='home-container'>
@@ -20,6 +21,18 @@ export default class HomeScreen extends React.Component {
                                 <HorFilmCard key={item.id} imageurl={item.imageurl}></HorFilmCard>
                             )
                         })}></FilmList>
+                    <h2 className='title'>Now Playing</h2>
+                        <div className='film-list-box-wrapper'>
+                            <ul class="row" className='film-list-box'>
+                            {
+                                PopularListData.results.map((item, key)=>{
+                                    return(
+                                        <li class="col-lg-3 col-md-3 col-sm-6"><VerFilmCard key={item.id} movieimageurl={item.imageurl} moviename={item.moviename} movierate={item.movierate} moviedate={item.moviedate} movietype={item.movietype}></VerFilmCard></li>
+                                    )
+                                })
+                            }
+                            </ul>
+                        </div>
                 </div>
             </div>
         )

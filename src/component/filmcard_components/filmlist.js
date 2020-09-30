@@ -8,7 +8,7 @@ export default class FilmList extends React.Component {
     render(){
         return(
             <div>
-                <div className='type-name'>{this.props.title}</div>
+                <h2 className='title'>{this.props.title}</h2>
                 <div className='film-list'>
                     {this.props.data}
                 </div>

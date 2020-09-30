@@ -41,9 +41,7 @@
     padding: 70px;
 }
 
-.title {
-    font-weight: bold;
-    font-size: 30px;
+h1.title {
     color: whitesmoke;
     padding-bottom: 10px;
 }
@@ -224,13 +222,14 @@ text.head-text {
 }
 
 .vertical-movie-image {
-    width: 200px;
-    height: 300px;
+    width: 100%;
+    height: 266px;
+    position: relative;
 }
 
 .horizontal-movie-image {
-    width: 333px;
-    height: 250px;
+    width: 266px;
+    height: 200px;
     transition-duration: 0.2s;
     transition-delay: 0.2s;
     transition-timing-function: ease;
@@ -238,23 +237,21 @@ text.head-text {
 }
 
 .horizontal-movie-image:hover {
-    width: 399px;
-    height: 300px;
+    width: 345px;
+    height: 260px;
     border-width: 5px;
     border: 3px solid whitesmoke;
 }
 
-.movie-name {
-    font-size: medium;
+h4.movie-name {
     color: whitesmoke;
-    font-weight: bold;
+    margin: 2px;
 }
 
 .card-bottom {
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
-    margin-top: 5px;
 }
 
 .movie-info {
@@ -269,9 +266,10 @@ text.head-text {
     font-size: small;
 }
 
-.type-name {
-    font-size: 25px;
+h2.title {
     color: whitesmoke;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .film-list {
@@ -281,8 +279,6 @@ text.head-text {
     scroll-behavior: smooth;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    margin-top: 10px;
-    margin-bottom: 10px;
     align-items: center;
 }
 
