@@ -12,18 +12,10 @@ export default class HeadBar extends React.Component {
         return(
             <div className='head-container'>
                 <div className='head-content-left'>
-                    <div>
-                        <img className='head-logo' src={require('../../resources/img/background/netflix-logo.png')} />
-                    </div>
-                    <div>
-                        <a className='large-text'>Movies</a>
-                    </div>
-                    <div>
-                        <a className='large-text'>TV Show</a>
-                    </div>
-                    <div>
-                        <a className='large-text'>Actor</a>
-                    </div>  
+                    <img className='head-logo' src={require('../../resources/img/background/netflix-logo.png')} />
+                    <a className='large-text'>Movies</a>                 
+                    <a className='large-text'>TV Show</a>                   
+                    <a className='large-text'>Actor</a> 
                 </div>
                 <div className='head-content-right'>
                     <SearchBar></SearchBar>

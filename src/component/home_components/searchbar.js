@@ -13,8 +13,10 @@ export default class SearchBar extends React.Component {
         return(
             <div className='search-bar-area'>
                 <input className='search-filter' type='text' onChange={(e)=>this.setState({searchkey:e.target.value})} placeholder='Find some movies?'></input>
-                <FaSearch color='rgb(122, 120, 116)' size={16} style={{marginLeft:'10px'}}></FaSearch>
-                <text className='head-text'>SEARCH</text>
+                <div className='search-button'>  
+                    <FaSearch color='rgb(122, 120, 116)' size={16} style={{marginLeft:'10px'}}></FaSearch>
+                    <text className='head-text'>SEARCH</text>
+                </div>
             </div>
         )
     }

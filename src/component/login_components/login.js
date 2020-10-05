@@ -8,7 +8,7 @@ export default class LoginScreen extends React.Component {
     render(){
         return(
             <div className='login-container'>
-                <div>
+                <div  className='login-header'>
                     <img className='login-logo' src={require('../../resources/img/background/netflix-logo.png')} />
                 </div>
                 <div className='login-body'>
