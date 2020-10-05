@@ -3,7 +3,7 @@ import HeadBar from './headbar';
 import HorFilmCard from '../filmcard_components/horizontalfilmcard';
 import VerFilmCard from '../filmcard_components/verticalfilmcard';
 import PopularListData from '../../data/data';
-import FilmList from '../filmcard_components/filmlist'
+import FilmList from '../filmcard_components/filmlist';
 
 export default class HomeScreen extends React.Component {
     constructor(props){
@@ -22,17 +22,15 @@ export default class HomeScreen extends React.Component {
                             )
                         })}></FilmList>
                     <h2 className='title'>Now Playing</h2>
-                        <div className='film-list-box-wrapper'>
-                            <ul class="row" className='film-list-box'>
-                            {
-                                PopularListData.results.map((item, key)=>{
-                                    return(
-                                        <li class="col-lg-3 col-md-3 col-sm-6"><VerFilmCard key={item.id} movieimageurl={item.imageurl} moviename={item.moviename} movierate={item.movierate} moviedate={item.moviedate} movietype={item.movietype}></VerFilmCard></li>
-                                    )
-                                })
-                            }
-                            </ul>
-                        </div>
+                    <div className='grid-container'>
+                        {
+                            PopularListData.results.map((item, key)=>{
+                                return(
+                                    <VerFilmCard key={item.id} movieimageurl={item.imageurl} moviename={item.moviename} movierate={item.movierate} moviedate={item.moviedate} movietype={item.movietype}></VerFilmCard>
+                                )
+                            })
+                        }
+                    </div>
                 </div>
             </div>
         )
