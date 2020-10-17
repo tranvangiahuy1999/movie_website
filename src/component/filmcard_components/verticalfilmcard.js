@@ -2,15 +2,12 @@ import React from 'react';
 import { FaStar, FaCalendar } from "react-icons/fa";
 
 export default class VerFilmCard extends React.Component {
-    constructor(props){
-        super(props);
-    }
 
     render(){
         return(
             <div className='each-ver-card'>
                 <div>
-                    <img className='vertical-movie-image' src={this.props.movieimageurl}></img>
+                    <img alt={this.props.imagename} className='vertical-movie-image' src={this.props.imageurl}></img>
                 </div>
                 <div className='card-bottom'>
                     <h4 className='movie-name'>{this.props.moviename}</h4>

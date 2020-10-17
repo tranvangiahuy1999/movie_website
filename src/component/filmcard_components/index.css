@@ -1,0 +1,80 @@
+.each-ver-card {
+    width: 80%;
+    height: auto;
+    border: solid rgb(48,48,48);
+    border-width: 1px 1px 1px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.vertical-movie-image {
+    width: 100%;
+    height: auto;
+}
+
+.vertical-movie-image:hover{
+    background-color:#000;
+    opacity:0.5;
+}
+
+.horizontal-movie-image {
+    width: 320px;
+    height: 200px;
+    transition-duration: 0.2s;
+    transition-delay: 0.2s;
+    transition-timing-function: ease;
+    cursor: pointer;
+}
+
+.horizontal-movie-image:hover {
+    width: 345px;
+    height: 260px;
+    border-radius: 2px;
+    border: 3px solid whitesmoke;
+    background-color:#000;
+    opacity:0.8;
+}
+
+h4.movie-name {
+    color: whitesmoke;
+    margin: 2%;
+}
+
+.card-bottom {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10px;
+}
+
+.movie-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.movie-text-info {
+    color: gray;
+    font-size: small;
+}
+
+h2.title {
+    color: whitesmoke;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.film-list {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    align-items: center;
+}
+
+.film-list::-webkit-scrollbar {
+    display: none;
+}

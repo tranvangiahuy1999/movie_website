@@ -16,9 +16,10 @@ router.route('/add').post((req, res) => {
 }
 )
 
-router.route('./remove').post((req, res) => {
-    const username = req.body.username;
-    user.deleteOne({username: username}, (err)=>res.status(400).json('Error ' + err))
+router.route('/delete/:id').delete((req, res) => {
+    user.findByIdAndDelete(req.params.id)
+    .then(()=>res.json('Executed'))
+    .catch(error=>res.json('Error '+error))
 })
 
 module.exports = router;

@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.css';
-import './style/default.css';
-import Parent from './component/page/parent';
+import './component/filmcard_components/index.css';
+import './component/home_components/index.css';
+import './component/login_components/index.css';
+import Router from './component/page/index.js';
 
 function App() {
   return (
-      <Parent></Parent>
+      <Router></Router>
   );
 }
 

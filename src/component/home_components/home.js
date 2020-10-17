@@ -11,24 +11,29 @@ export default class HomeScreen extends React.Component {
     }
 
     render(){
+
+        const DataMapper = (data, orient)=> {
+            if(orient==='hori'){
+                return data.map((item, key) => (
+                    <HorFilmCard key={item.id} imageurl={item.imageurl}></HorFilmCard>
+                ))
+            }
+            if(orient==='verti'){
+                return data.map((item, key) => (
+                    <VerFilmCard key={item.id} imageurl={item.imageurl} moviename={item.moviename} movierate={item.movierate} moviedate={item.moviedate} movietype={item.movietype}></VerFilmCard> 
+                ))
+            }
+        }
+
         return(
             <div className='home-container'>
                 <HeadBar></HeadBar>
                 <div className='home-content'>
-                    <FilmList title='Popular' data={
-                        PopularListData.resultsHor.map((item, key) => {
-                            return(
-                                <HorFilmCard key={item.id} imageurl={item.imageurl}></HorFilmCard>
-                            )
-                        })}></FilmList>
+                    <FilmList title='Popular' data={DataMapper(PopularListData.resultsHor,'hori')}></FilmList>
                     <h2 className='title'>Now Playing</h2>
                     <div className='grid-container'>
                         {
-                            PopularListData.results.map((item, key)=>{
-                                return(
-                                    <VerFilmCard key={item.id} movieimageurl={item.imageurl} moviename={item.moviename} movierate={item.movierate} moviedate={item.moviedate} movietype={item.movietype}></VerFilmCard>
-                                )
-                            })
+                            DataMapper(PopularListData.results, 'verti')
                         }
                     </div>
                 </div>

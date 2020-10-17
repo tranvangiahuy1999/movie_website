@@ -5,7 +5,7 @@ import UsernameFilter from '../login_components/usernamefilter';
 import HiddenPassword from '../login_components/hiddenpassword';
 import WarnText from '../login_components/warntext';
 
-export default class Parent extends React.Component {
+export default class Router extends React.Component {
     constructor(props){
         super(props);
         this.state={
