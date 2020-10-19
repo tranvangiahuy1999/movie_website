@@ -2,7 +2,6 @@ import React from 'react';
 import { FaStar, FaCalendar } from "react-icons/fa";
 
 export default class VerFilmCard extends React.Component {
-
     render(){
         return(
             <div className='each-ver-card'>
@@ -22,7 +21,7 @@ export default class VerFilmCard extends React.Component {
                         </div>
                     </div>
                     <div className='movie-text-info'>
-                        {this.props.movietype}
+                        {this.props.moviegenre}
                     </div>
                 </div>
             </div>

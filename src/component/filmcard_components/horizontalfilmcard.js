@@ -1,7 +1,6 @@
 import React from 'react';
 
 export default class HorFilmCard extends React.Component {
-
    render() {
      return (
        <div style={{flex:1}}>
