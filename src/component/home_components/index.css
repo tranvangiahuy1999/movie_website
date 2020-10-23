@@ -2,7 +2,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: auto auto auto auto;
-    grid-row-gap: 5%;
+    grid-row-gap: 2%;
 }
 
 .head-container {
@@ -62,14 +62,17 @@ div.search-bar-area div.search-button {
 input.search-filter {
     padding-left: 5%;
     width: 50%;
-    height: 30px;
+    height: 25px;
     background-color: black;
     border-color: lightgray;
     color: lightgray;
+    border-radius: 10px;
+    outline: none;
 }
 
 .search-filter::placeholder{
     color: lightgray;
+    border-radius: 10px;
 }
 
 .home-container {

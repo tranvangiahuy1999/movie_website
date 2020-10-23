@@ -24,7 +24,7 @@ export default class LoginForm extends React.Component {
                         <input type='checkbox'></input><text className='text'>Remember me</text>
                     </div>
                     <div className='area'>
-                        <text className='large-text'>New to Netflix? </text><a href='https://reactjs.org/docs/forms.html' className='link-text'>Sign up now.</a>
+                        <text className='large-text'>New to Netflix? </text><a href='/register' className='link-text'>Sign up now.</a>
                     </div>
                     <div className='area'>
                         <text className='text'>This page is protected by Google reCAPTCHA to ensure you're not a bot.</text>

@@ -20,7 +20,7 @@ export default class VerFilmCard extends React.Component {
                             {this.props.moviedate}
                         </div>
                     </div>
-                    <div className='movie-text-info'>
+                    <div className='movie-genres-info'>
                         {this.props.moviegenre}
                     </div>
                 </div>

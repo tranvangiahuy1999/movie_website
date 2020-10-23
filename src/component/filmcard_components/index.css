@@ -2,37 +2,28 @@
     width: 80%;
     height: auto;
     border: solid rgb(48,48,48);
-    border-width: 1px 1px 1px;
-    border-radius: 5px;
+    border-width: 2px 2px 2px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
 .vertical-movie-image {
     width: 100%;
-    height: auto;
+    height: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .vertical-movie-image:hover{
     background-color:#000;
-    opacity:0.5;
+    opacity:0.7;
 }
 
-.horizontal-movie-image {
-    width: 320px;
-    height: 200px;
-    transition-duration: 0.2s;
-    transition-delay: 0.2s;
-    transition-timing-function: ease;
-    cursor: pointer;
-}
-
-.horizontal-movie-image:hover {
-    width: 345px;
-    height: 260px;
-    border-radius: 2px;
-    border: 3px solid whitesmoke;
-    background-color:#000;
-    opacity:0.8;
+.card-bottom {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5px;
+    height: 100%;
 }
 
 h4.movie-name {
@@ -40,22 +31,19 @@ h4.movie-name {
     margin: 2%;
 }
 
-.card-bottom {
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 10px;
-}
-
 .movie-info {
     display: flex;
     flex-direction: row;
     align-items: center;
-
+    color: lightgray;
+    font-size: small;
+    margin: 2%;
 }
 
-.movie-text-info {
-    color: gray;
+.movie-genres-info {
+    color: lightgray;
     font-size: small;
+    margin: 2%;
 }
 
 h2.title {
